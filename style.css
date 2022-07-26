@@ -1,0 +1,47 @@
+html, body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.albums li:hover {
+    cursor: pointer;
+    background-color: #f6f3f3;
+}
+.albums li.active:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.albumsGroup {
+    display: flex;
+    gap: 70px;
+}
+
+.photos-head {
+    background-color: #f6f3f3;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f6f3f3;
+    border-radius: 4px;
+}
+
+.photos img {
+    display: block;
+    transition: all .5s ease;
+}
+
+.photos img:hover {
+    box-shadow: 0 4px 8px #000;
+    transform: translateY(2px);
+}
